@@ -1,7 +1,32 @@
 PODS:
-  - ALSTransactionSdkKit (0.1.0)
+  - ALSAlipay (0.0.2)
+  - ALSInAppPurchase (0.1.3):
+    - OpenSSL
+    - PodAsset
+  - ALSPayMent (0.1.15):
+    - ALSAlipay
+    - ALSPayMent/Core (= 0.1.15)
+    - PodAsset
+    - UMengUShare/Social/WeChat (= 6.4.1)
+  - ALSPayMent/Core (0.1.15):
+    - ALSAlipay
+    - PodAsset
+    - UMengUShare/Social/WeChat (= 6.4.1)
+  - ALSTransactionSdkKit (0.1.1)
+  - OpenSSL (1.0.210)
+  - PodAsset (0.22.0)
+  - UMengUShare/Core (6.4.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.1)
+  - UMengUShare/Social/ReducedWeChat (6.4.1):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.4.1):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
 
 DEPENDENCIES:
+  - ALSInAppPurchase
+  - ALSPayMent
   - ALSTransactionSdkKit (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +34,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSTransactionSdkKit: 73f6f0a60e14f90e7f7338a667cf254168733bcb
+  ALSAlipay: 7d7622bac953d588497e9aea1f2660f567510a49
+  ALSInAppPurchase: 0185c90daaa2df0bee1e50af1d2ce2cceb235031
+  ALSPayMent: 38c2086363356b5e8e0ffae88733b4cf4ef023ab
+  ALSTransactionSdkKit: 4f351559a5ac85c2378ceca148a05c0d233d46df
+  OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
+  PodAsset: d9d35b6a86ceaeaead63692a1bce27b4aea243b3
+  UMengUShare: 7756e2e46ceba04e3000fb2c9b1d3f61784ca2ff
 
-PODFILE CHECKSUM: 626f38752d167e265edfd54f69c54cb57152828b
+PODFILE CHECKSUM: 31dc80386d7d8316016b20d55cb6fc6196564a2d
 
 COCOAPODS: 1.2.1

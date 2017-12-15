@@ -1,0 +1,1 @@
+../../../ALSInAppPurchase/ALSInAppPurchase/Classes/ALSInAppPurchase.h

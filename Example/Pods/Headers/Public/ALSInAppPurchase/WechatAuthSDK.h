@@ -1,0 +1,1 @@
+../../../ALSInAppPurchase/ALSInAppPurchase/Classes/WechatAuthSDK.h

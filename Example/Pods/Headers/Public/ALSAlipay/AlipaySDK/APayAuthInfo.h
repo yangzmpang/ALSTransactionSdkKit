@@ -1,0 +1,1 @@
+../../../../ALSAlipay/ALSAlipay/Frameworks/AlipaySDK.framework/Headers/APayAuthInfo.h

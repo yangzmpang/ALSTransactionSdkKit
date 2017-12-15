@@ -1,0 +1,1 @@
+../../../ALSPayMent/ALSPayMent/Classes/ALSPayManager.h

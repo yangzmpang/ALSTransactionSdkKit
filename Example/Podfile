@@ -1,8 +1,9 @@
-use_frameworks!
+#use_frameworks!
 
 target 'ALSTransactionSdkKit_Example' do
   pod 'ALSTransactionSdkKit', :path => '../'
-
+  pod 'ALSPayMent'
+  pod 'ALSInAppPurchase'
   target 'ALSTransactionSdkKit_Tests' do
     inherit! :search_paths
 

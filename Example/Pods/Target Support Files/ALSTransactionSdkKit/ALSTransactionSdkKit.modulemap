@@ -1,6 +1,0 @@
-framework module ALSTransactionSdkKit {
-  umbrella header "ALSTransactionSdkKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

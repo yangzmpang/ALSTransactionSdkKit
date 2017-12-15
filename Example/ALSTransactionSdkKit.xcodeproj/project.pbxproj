@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15E3DE4C09CF48FC9C575905 /* libPods-ALSTransactionSdkKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC136660C59A9ADFCCFDD6 /* libPods-ALSTransactionSdkKit_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,10 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		616620CC9A3B77EA9CAE850E /* libPods-ALSTransactionSdkKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6974E86777C0F3CB8A6EBB4 /* libPods-ALSTransactionSdkKit_Tests.a */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		790017E395C47EC3347C2DC4 /* Pods_ALSTransactionSdkKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECB0968B5DA1EA62832ACDE /* Pods_ALSTransactionSdkKit_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		F7BD8DEC780DABAD7C403E00 /* Pods_ALSTransactionSdkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AEB2CED71A3283F98D685D /* Pods_ALSTransactionSdkKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 		056410F002B14F6EC93DA293 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1290EA912A130857B3C760FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2FFFA16819E7C6510198E016 /* ALSTransactionSdkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALSTransactionSdkKit.podspec; path = ../ALSTransactionSdkKit.podspec; sourceTree = "<group>"; };
+		44AC136660C59A9ADFCCFDD6 /* libPods-ALSTransactionSdkKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALSTransactionSdkKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313F6C52F74E80702D16039 /* Pods-ALSTransactionSdkKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Tests/Pods-ALSTransactionSdkKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF51107EEEF79BA02471B13 /* Pods-ALSTransactionSdkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Tests/Pods-ALSTransactionSdkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ALSTransactionSdkKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALSTransactionSdkKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,11 +63,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		80AEB2CED71A3283F98D685D /* Pods_ALSTransactionSdkKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSTransactionSdkKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A41A2F2725D58F6F793DB25B /* Pods-ALSTransactionSdkKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Example/Pods-ALSTransactionSdkKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BBD34E4B67B726859B5C0713 /* Pods-ALSTransactionSdkKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Example/Pods-ALSTransactionSdkKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FECB0968B5DA1EA62832ACDE /* Pods_ALSTransactionSdkKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSTransactionSdkKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6974E86777C0F3CB8A6EBB4 /* libPods-ALSTransactionSdkKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALSTransactionSdkKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F7BD8DEC780DABAD7C403E00 /* Pods_ALSTransactionSdkKit_Example.framework in Frameworks */,
+				15E3DE4C09CF48FC9C575905 /* libPods-ALSTransactionSdkKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				790017E395C47EC3347C2DC4 /* Pods_ALSTransactionSdkKit_Tests.framework in Frameworks */,
+				616620CC9A3B77EA9CAE850E /* libPods-ALSTransactionSdkKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				80AEB2CED71A3283F98D685D /* Pods_ALSTransactionSdkKit_Example.framework */,
-				FECB0968B5DA1EA62832ACDE /* Pods_ALSTransactionSdkKit_Tests.framework */,
+				44AC136660C59A9ADFCCFDD6 /* libPods-ALSTransactionSdkKit_Example.a */,
+				F6974E86777C0F3CB8A6EBB4 /* libPods-ALSTransactionSdkKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
