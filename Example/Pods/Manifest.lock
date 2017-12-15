@@ -1,0 +1,16 @@
+PODS:
+  - ALSTransactionSdkKit (0.1.0)
+
+DEPENDENCIES:
+  - ALSTransactionSdkKit (from `../`)
+
+EXTERNAL SOURCES:
+  ALSTransactionSdkKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ALSTransactionSdkKit: 73f6f0a60e14f90e7f7338a667cf254168733bcb
+
+PODFILE CHECKSUM: 626f38752d167e265edfd54f69c54cb57152828b
+
+COCOAPODS: 1.2.1

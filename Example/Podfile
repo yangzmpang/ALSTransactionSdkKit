@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ALSTransactionSdkKit_Example' do
+  pod 'ALSTransactionSdkKit', :path => '../'
+
+  target 'ALSTransactionSdkKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
