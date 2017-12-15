@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   #s.source_files = 'ALSTransactionSdkKit/Classes/**/*'
-  s.preserve_paths = 'ALSPayMent/Classes/ALSTransactionSdkKit.framework'
+  s.preserve_paths = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ALSTransactionSdkKit' }
   s.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
   
