@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		056410F002B14F6EC93DA293 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1290EA912A130857B3C760FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2FFFA16819E7C6510198E016 /* ALSTransactionSdkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALSTransactionSdkKit.podspec; path = ../ALSTransactionSdkKit.podspec; sourceTree = "<group>"; };
+		056410F002B14F6EC93DA293 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1290EA912A130857B3C760FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2FFFA16819E7C6510198E016 /* ALSTransactionSdkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ALSTransactionSdkKit.podspec; path = ../ALSTransactionSdkKit.podspec; sourceTree = "<group>"; };
 		44AC136660C59A9ADFCCFDD6 /* libPods-ALSTransactionSdkKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALSTransactionSdkKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313F6C52F74E80702D16039 /* Pods-ALSTransactionSdkKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Tests/Pods-ALSTransactionSdkKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF51107EEEF79BA02471B13 /* Pods-ALSTransactionSdkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSTransactionSdkKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSTransactionSdkKit_Tests/Pods-ALSTransactionSdkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -527,9 +527,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALSTransactionSdkKit/ALSTransactionSdkKit-Prefix.pch";
 				INFOPLIST_FILE = "ALSTransactionSdkKit/ALSTransactionSdkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -542,9 +544,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALSTransactionSdkKit/ALSTransactionSdkKit-Prefix.pch";
 				INFOPLIST_FILE = "ALSTransactionSdkKit/ALSTransactionSdkKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
