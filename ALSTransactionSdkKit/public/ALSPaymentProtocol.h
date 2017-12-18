@@ -10,17 +10,16 @@
 #import "ALSPayment.h"
 
 @protocol ALSPaymentService <NSObject>
-@required
+@optional
 - (void)setInitDelegate:(id)alsthirdpartypaymentInitDelegate;
 - (void)startPayment:(ALSPayment*)payment callback:(ALSPayCompleteCallBack)callback;
-@optional
 - (bool)supportPlatform:(ALSTKPaymentPlatform)platform;
 - (void)queryPaymentWithOrderId: (NSString*)orderid  callback:(ALSPayCompleteCallBack)callback;
 - (BOOL)handleThirdPartyPaymentCallback:(NSURL*)str;
 @end
 
 @protocol ALSPaymentIAPService <ALSPaymentService>
-
+@optional
 - (void)SetMsgCallback:(ALSPayCompleteCallBack)callback;
 - (void)requestProducts:(NSSet*)identifiers success:(IAPProductsRequestSuccessBlock)successBlock failure:(IAPStoreFailureBlock)failureBlock;
 
@@ -73,4 +72,8 @@
  */
 - (BOOL) removeAllRestore;
 
+@end
+
+@protocol ALSPaymentPlugProtocol <NSObject>
+   - (ALSTKPaymentPlatform)getName;
 @end

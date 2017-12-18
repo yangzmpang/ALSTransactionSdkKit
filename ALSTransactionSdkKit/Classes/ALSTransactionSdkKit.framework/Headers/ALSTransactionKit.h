@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ALSPayment.h"
 #import "ALSPaymentProtocol.h"
+#import "ALSThirdPartyPaymentInfitInfo.h"
 
 #define ALS_PAYMENT_WECHAT [[ALSTransactionKit shareManager] getService:ALSTKPaymentPlatformWechat]
 #define ALS_PAYMENT_ALIPAY [[ALSTransactionKit shareManager] getService:ALSTKPaymentPlatformAlipay]
@@ -24,9 +25,16 @@
 @property ( nonatomic, strong) id AliPay;
 @property ( nonatomic, strong) id IAPPay;
 
+
+/**
+ 是否使用调试url 
+ */
+@property (nonatomic,assign) BOOL isDebug;
+
 + (instancetype)shareManager;
+
 - (void)asyncInit:(NSString*)appid callback:(ALSPayCompleteCallBack)callback;
 - (id)getService:( ALSTKPaymentPlatform )service;
-
+- (void)setService:( id<ALSPaymentPlugProtocol> )protocol;
 
 @end
