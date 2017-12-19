@@ -7,12 +7,45 @@
 //
 
 #import "ALSAppDelegate.h"
+#import <ALSInterfaceSdk/ALSTransactionKit.h>
+
+@interface ALSAppDelegate ()<ALSThirdPartyPaymentInitDelegate>
+
+@end
 
 @implementation ALSAppDelegate
+
+- (ALSThirdPartyPaymentInfitInfo*)thirdPartyPaymentInitInfoPlatform:(ALSTKPaymentPlatform)platform
+{
+    // 写入支付宝字段
+    if ( platform == ALSTKPaymentPlatformAlipay ){
+        ALSThirdPartyPaymentInfitInfo* info = [ALSThirdPartyPaymentInfitInfo new];
+        info.platform = platform;
+        info.appKey = @"";
+        info.appSecret = @"";
+        
+        // 这里要在info.plist 里边写的一样的
+        info.urlSecheme = @"";
+        return info;
+    }
+    
+    // 微信字段信息
+    if ( platform == ALSTKPaymentPlatformWechat ){
+        ALSThirdPartyPaymentInfitInfo* info2 = [ALSThirdPartyPaymentInfitInfo new];
+        info2.platform = platform;
+        info2.appKey = @"";
+        info2.appSecret = @"";
+        info2.urlSecheme = @"";
+        return info2;
+    }
+    
+    return nil;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+     [ALS_PAYMENT_WECHAT setInitDelegate:self];
     return YES;
 }
 

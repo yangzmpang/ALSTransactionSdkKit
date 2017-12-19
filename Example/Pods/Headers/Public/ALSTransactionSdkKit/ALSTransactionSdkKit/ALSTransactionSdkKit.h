@@ -1,1 +1,0 @@
-../../../../../../ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework/Headers/ALSTransactionSdkKit.h

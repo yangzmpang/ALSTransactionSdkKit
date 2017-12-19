@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSTransactionSdkKit'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of ALSTransactionSdkKit.'
 
 # This description is used to generate tags and improve search results.
@@ -31,32 +31,22 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.subspec 'public' do |cs|
-    cs.source_files = 'ALSCommonKit/public/**/*'
+    cs.source_files = 'ALSTransactionSdkKit/public/**/*'
   end
 
   s.subspec 'interface' do |face|
-     face.source_files = 'ALSTransactionSdkKit/Classes/**/*'
-     face.preserve_paths = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
-     face.xcconfig = { 'OTHER_LDFLAGS' => '-framework ALSTransactionSdkKit' }
-     face.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
      face.dependency 'ALSTransactionSdkKit/public'
+     #face.preserve_paths = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
+     #face.xcconfig = { 'OTHER_LDFLAGS' => '-framework ALSInterfaceSdk' }
+     face.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
+     face.dependency 'ALSPayMent'
+     face.dependency 'ALSInAppPurchase'
   end
 
-  s.subspec 'plugin' do |in|
-    in.source_files = 'ALSCommonKit/plugin/**/*'
-    in.dependency 'ALSTransactionSdkKit/public'
+  s.subspec 'plugin' do |myplugin|
+    myplugin.dependency 'ALSTransactionSdkKit/public'
+    myplugin.source_files = 'ALSTransactionSdkKit/plugin/**/*'
   end
 
-  #s.source_files = 'ALSTransactionSdkKit/Classes/**/*'
-  #s.preserve_paths = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
-  #s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ALSTransactionSdkKit' }
-  #s.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework'
-  
-  # s.resource_bundles = {
-  #   'ALSTransactionSdkKit' => ['ALSTransactionSdkKit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

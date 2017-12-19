@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E857AE17223A788FA3618C2668CDC5CE'
-               BlueprintName = 'Pods-ALSTransactionSdkKit_Example'
+               BlueprintIdentifier = 'F5A4256368D1556359934676549C56F7'
+               BlueprintName = 'ALSTransactionSdkKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-ALSTransactionSdkKit_Example.a'>
+               BuildableName = 'libALSTransactionSdkKit.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

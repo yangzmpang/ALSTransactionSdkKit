@@ -1,6 +1,6 @@
 {
   "name": "ALSTransactionSdkKit",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "summary": "A short description of ALSTransactionSdkKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yangzmpang/ALSTransactionSdkKit",
@@ -13,14 +13,39 @@
   },
   "source": {
     "git": "https://github.com/yangzmpang/ALSTransactionSdkKit.git",
-    "tag": "0.1.1"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "preserve_paths": "ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework",
-  "xcconfig": {
-    "OTHER_LDFLAGS": "-framework ALSTransactionSdkKit"
-  },
-  "vendored_frameworks": "ALSTransactionSdkKit/Classes/ALSTransactionSdkKit.framework"
+  "subspecs": [
+    {
+      "name": "public",
+      "source_files": "ALSTransactionSdkKit/public/**/*"
+    },
+    {
+      "name": "interface",
+      "dependencies": {
+        "ALSTransactionSdkKit/public": [
+
+        ],
+        "ALSPayMent": [
+
+        ],
+        "ALSInAppPurchase": [
+
+        ]
+      },
+      "vendored_frameworks": "ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework"
+    },
+    {
+      "name": "plugin",
+      "dependencies": {
+        "ALSTransactionSdkKit/public": [
+
+        ]
+      },
+      "source_files": "ALSTransactionSdkKit/plugin/**/*"
+    }
+  ]
 }

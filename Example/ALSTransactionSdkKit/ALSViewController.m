@@ -7,7 +7,8 @@
 //
 
 #import "ALSViewController.h"
-#import <ALSTransactionSdkKit/ALSTransactionSdkKit.h>
+#import <ALSInterfaceSdk/ALSTransactionKit.h>
+
 
 @interface ALSViewController ()
 
@@ -19,8 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    [NetHelp md5:@"123"];
+   
+    int a = 0;
+    //[NetHelp md5:@"123"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,0 +1,1 @@
+../../../../../ALSTransactionSdkKit/plugin/ALSWeChat.h

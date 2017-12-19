@@ -1,0 +1,1 @@
+../../../../../ALSTransactionSdkKit/public/ALSPaymentProtocol.h
