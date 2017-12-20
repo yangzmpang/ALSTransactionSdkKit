@@ -10,7 +10,7 @@
 #import "ALSThirdPartyPaymentInfitInfo.h"
 
 typedef NS_ENUM(NSInteger,ENUMPayCode){
-    PayCodeSuccess, // 成功
+    PayCodeSuccess=200100, // 成功
     PayCodeFailure, // 失败
     PayCodeCancel, // 取消
     PayquerySuccess, // 查询成功
