@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E857AE17223A788FA3618C2668CDC5CE'
+               BlueprintIdentifier = '6189675CEFA38DEE070E6D33147CE2AB'
                BlueprintName = 'Pods-ALSTransactionSdkKit_Example'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-ALSTransactionSdkKit_Example.a'>

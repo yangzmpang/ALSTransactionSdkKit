@@ -24,7 +24,7 @@
 @implementation ALSRMStoreAppReceiptVerifier
 
 - (BOOL)verifyTransaction:(SKPaymentTransaction*)transaction
-                           success:(void (^)())successBlock
+                           success:(void (^)(void))successBlock
                            failure:(void (^)(NSError *error))failureBlock
 {
     // yangzm 这里是本地认证，如果是正确的就返回了，如果有问题就进行刷新操作
@@ -91,7 +91,7 @@
 
 - (BOOL)verifyTransaction:(SKPaymentTransaction*)transaction
                 inReceipt:(ALSRMAppReceipt*)receipt
-                           success:(void (^)())successBlock
+                           success:(void (^)(void))successBlock
                            failure:(void (^)(NSError *error))failureBlock
 {
     const BOOL receiptVerified = [self verifyAppReceipt:receipt];

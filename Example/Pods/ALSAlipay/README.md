@@ -1,2 +1,0 @@
-# ALSAliPay
-ALS Alipay pod

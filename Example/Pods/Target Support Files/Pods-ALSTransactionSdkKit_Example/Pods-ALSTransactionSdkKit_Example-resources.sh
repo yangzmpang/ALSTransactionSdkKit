@@ -80,14 +80,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "ALSAlipay/ALSAlipay/Assets/AlipaySDK.bundle"
   install_resource "ALSInAppPurchase/ALSInAppPurchase/Assets/ALSInAppPurchase.bundle"
-  install_resource "UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "ALSAlipay/ALSAlipay/Assets/AlipaySDK.bundle"
   install_resource "ALSInAppPurchase/ALSInAppPurchase/Assets/ALSInAppPurchase.bundle"
-  install_resource "UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

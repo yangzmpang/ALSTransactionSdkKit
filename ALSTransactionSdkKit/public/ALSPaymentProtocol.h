@@ -21,12 +21,28 @@
 @protocol ALSPaymentIAPService <ALSPaymentService>
 @optional
 - (void)SetMsgCallback:(ALSPayCompleteCallBack)callback;
+
+/**
+ 是否可以购买，因为有的账号有问提时后边操作会不能判断，所以这个要在
+ 购买 button 判断是不是灰色的来阻止后边出现未知错误
+
+ @return ok yes
+ */
+- (BOOL)canMakePayments;
+
+/**
+ 查询商品
+
+ @param identifiers 产品列表
+ @param successBlock 成功回调
+ @param failureBlock 失败回调
+ */
 - (void)requestProducts:(NSSet*)identifiers success:(IAPProductsRequestSuccessBlock)successBlock failure:(IAPStoreFailureBlock)failureBlock;
 
 /**
  进行凭证的远程认证
 */
-- (void) verifyCertificate:(NSString*)certificate transactionId:(NSString*)transactionId map:(NSDictionary*)entermap error:(NSError*)error callback:(ALSPayCompleteCallBack)callback;
+- (void) verifyCertificate:(NSString*)certificate transactionId:(NSString*)transactionId map:(NSDictionary*)entermap userinfo:(NSString*)info error:(NSError*)error callback:(ALSPayCompleteCallBack)callback;
 
 /**
  未完成远程验证的订单总数
@@ -41,7 +57,6 @@
  @return 成功返回
  */
 - (BOOL) carryOnUnfinishedVerify:(ALSPayCompleteCallBack)callback;
-
 
 /**
  返回当时传入的参数,用于定位是否是当时传来的值

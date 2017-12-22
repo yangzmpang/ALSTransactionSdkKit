@@ -2,7 +2,7 @@ CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/ALSInAppPurchase
 ENABLE_BITCODE = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/**
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSAlipay" "${PODS_ROOT}/Headers/Public/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public/ALSPayMent" "${PODS_ROOT}/Headers/Public/ALSTransactionSdkKit" "${PODS_ROOT}/Headers/Public/OpenSSL" "${PODS_ROOT}/Headers/Public/PodAsset" "${PODS_ROOT}/Headers/Public/UMengUShare"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public/ALSTransactionSdkKit" "${PODS_ROOT}/Headers/Public/OpenSSL" "${PODS_ROOT}/Headers/Public/PodAsset"
 LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/PodAsset"
 OTHER_LDFLAGS = $(inherited) -ObjC -undefined dynamic_lookup -l"c++" -l"stdc++" -l"z"
 PODS_BUILD_DIR = $BUILD_DIR

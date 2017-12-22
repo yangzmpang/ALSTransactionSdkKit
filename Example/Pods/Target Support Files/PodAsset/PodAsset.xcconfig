@@ -1,6 +1,6 @@
 CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/PodAsset
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/PodAsset" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSAlipay" "${PODS_ROOT}/Headers/Public/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public/ALSPayMent" "${PODS_ROOT}/Headers/Public/ALSTransactionSdkKit" "${PODS_ROOT}/Headers/Public/OpenSSL" "${PODS_ROOT}/Headers/Public/PodAsset" "${PODS_ROOT}/Headers/Public/UMengUShare"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/PodAsset" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSInAppPurchase" "${PODS_ROOT}/Headers/Public/ALSTransactionSdkKit" "${PODS_ROOT}/Headers/Public/OpenSSL" "${PODS_ROOT}/Headers/Public/PodAsset"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
