@@ -1,17 +1,17 @@
 PODS:
-  - ALSInAppPurchase (0.1.5):
+  - ALSInAppPurchase (0.1.6):
     - OpenSSL
     - PodAsset
-  - ALSTransactionSdkKit (0.1.9):
-    - ALSTransactionSdkKit/interface (= 0.1.9)
-    - ALSTransactionSdkKit/plugin (= 0.1.9)
-    - ALSTransactionSdkKit/public (= 0.1.9)
-  - ALSTransactionSdkKit/interface (0.1.9):
+  - ALSTransactionSdkKit (0.1.10):
+    - ALSTransactionSdkKit/interface (= 0.1.10)
+    - ALSTransactionSdkKit/plugin (= 0.1.10)
+    - ALSTransactionSdkKit/public (= 0.1.10)
+  - ALSTransactionSdkKit/interface (0.1.10):
     - ALSInAppPurchase
     - ALSTransactionSdkKit/public
-  - ALSTransactionSdkKit/plugin (0.1.9):
+  - ALSTransactionSdkKit/plugin (0.1.10):
     - ALSTransactionSdkKit/public
-  - ALSTransactionSdkKit/public (0.1.9)
+  - ALSTransactionSdkKit/public (0.1.10)
   - OpenSSL (1.0.210)
   - PodAsset (0.22.0)
 
@@ -23,8 +23,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALSInAppPurchase: 57cb6df6282e005e3a31f1f91f5306b5a770e6db
-  ALSTransactionSdkKit: 974434ca0148f2cfc91bbd6547d65c9a36bb7b56
+  ALSInAppPurchase: f6872bafdcf476772c9f68475a6fbe4adab49b7e
+  ALSTransactionSdkKit: b50c1cc6f81dff499fb3d604e629ad9179acb280
   OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
   PodAsset: d9d35b6a86ceaeaead63692a1bce27b4aea243b3
 

@@ -610,6 +610,8 @@ typedef void (^RMStoreSuccessBlock)(void);
 - (void)didPurchaseTransaction:(SKPaymentTransaction *)transaction queue:(SKPaymentQueue*)queue
 {
     ALSRMStoreLog(@"transaction purchased with product %@", transaction.payment.productIdentifier);
+    // 关闭交易
+    [self finishTransaction:transaction queue:queue];
     
     if (self.receiptVerifier != nil)
     {
@@ -650,12 +652,6 @@ typedef void (^RMStoreSuccessBlock)(void);
             BOOL isok = NO;
             if ( self.remoteverify ){
                 self.remoteverify( transaction.transactionIdentifier, userInfo, receiptStr,&isok, nil );
-                if ( isok ){
-                    [self didVerifyTransaction:transaction queue:queue];
-                }
-                else{
-                    [self didFailTransaction:transaction queue:queue error:nil];
-                }
             }
             
             if ( isok ){
@@ -684,15 +680,15 @@ typedef void (^RMStoreSuccessBlock)(void);
 	NSString* productIdentifier = payment.productIdentifier;
     ALSRMStoreLog(@"transaction failed with product %@ and error %@", productIdentifier, error.debugDescription);
     
+    if (error.code != ALSRMStoreErrorCodeUnableToCompleteVerification)
+    { // If we were unable to complete the verification we want StoreKit to keep reminding us of the transaction
+        [queue finishTransaction:transaction];
+    }
+    
     BOOL isok = NO;
     if ( self.remoteverify ){
         NSData* userinfo = [transaction.payment.applicationUsername dataUsingEncoding:NSUTF8StringEncoding];
         self.remoteverify( transaction.transactionIdentifier, userinfo, nil, &isok, error );
-    }
-    
-    if (error.code != ALSRMStoreErrorCodeUnableToCompleteVerification)
-    { // If we were unable to complete the verification we want StoreKit to keep reminding us of the transaction
-        [queue finishTransaction:transaction];
     }
     
     ALSRMAddPaymentParameters *parameters = [self popAddPaymentParametersForIdentifier:productIdentifier];
