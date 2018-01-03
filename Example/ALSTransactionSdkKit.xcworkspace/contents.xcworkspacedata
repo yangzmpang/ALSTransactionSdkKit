@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/yangziminyangzimin/Desktop/test/package/ALSTransactionSdkKit/Example/ALSTransactionSdkKit.xcodeproj">
+      location = "group:ALSTransactionSdkKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ALSTransactionSdkKit.xcodeproj">
    </FileRef>
 </Workspace>
