@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSTransactionSdkKit'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = 'A short description of ALSTransactionSdkKit.'
 
 # This description is used to generate tags and improve search results.
@@ -37,8 +37,6 @@ TODO: Add long description of the pod here.
   s.subspec 'interface' do |face|
      face.dependency 'ALSTransactionSdkKit/public'
      face.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
-     face.preserve_paths = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
-     face.xcconfig = { 'OTHER_LDFLAGS' => '-framework ALSInterfaceSdk' }
      #face.dependency 'ALSPayMent'
      face.dependency 'ALSInAppPurchase'
   end
@@ -47,6 +45,9 @@ TODO: Add long description of the pod here.
     myplugin.dependency 'ALSTransactionSdkKit/public'
     myplugin.source_files = 'ALSTransactionSdkKit/plugin/**/*'
   end
-
+  s.pod_target_xcconfig = {
+  'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/**',
+  'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+  }
 
 end
