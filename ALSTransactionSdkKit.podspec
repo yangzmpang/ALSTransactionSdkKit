@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSTransactionSdkKit'
-  s.version          = '0.1.14'
+  s.version          = '0.1.15'
   s.summary          = 'A short description of ALSTransactionSdkKit.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.subspec 'interface' do |face|
      face.dependency 'ALSTransactionSdkKit/public'
      face.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
-     #face.dependency 'ALSPayMent'
+     face.dependency 'ALSPayMent'
      face.dependency 'ALSInAppPurchase'
   end
 
