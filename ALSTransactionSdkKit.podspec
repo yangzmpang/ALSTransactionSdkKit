@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.subspec 'interface' do |face|
      face.dependency 'ALSTransactionSdkKit/public'
      face.vendored_frameworks = 'ALSTransactionSdkKit/Classes/ALSInterfaceSdk.framework'
-     face.dependency 'ALSPayMent'
+     #face.dependency 'ALSPayMent'
      face.dependency 'ALSInAppPurchase'
   end
 
