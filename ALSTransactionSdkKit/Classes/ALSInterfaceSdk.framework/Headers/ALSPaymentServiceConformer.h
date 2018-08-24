@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALSPaymentProtocol.h"
+#import <public/ALSPaymentProtocol.h>
 
 @interface ALSPaymentServiceConformer: NSObject<ALSPaymentService>
 {

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALSPayment.h"
-#import "ALSPaymentProtocol.h"
-#import "ALSThirdPartyPaymentInfitInfo.h"
+#import <public/ALSPayment.h>
+#import <public/ALSPaymentProtocol.h>
+#import <public/ALSThirdPartyPaymentInfitInfo.h>
 
 #define ALS_PAYMENT_WECHAT [[ALSTransactionKit shareManager] getService:ALSTKPaymentPlatformWechat]
 #define ALS_PAYMENT_ALIPAY [[ALSTransactionKit shareManager] getService:ALSTKPaymentPlatformAlipay]
